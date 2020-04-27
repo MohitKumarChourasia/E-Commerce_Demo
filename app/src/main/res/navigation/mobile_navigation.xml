@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mohit.e_commercedemo.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.mohit.e_commercedemo.ui.cart.cart"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/cart_fragment" />
+
+
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.mohit.e_commercedemo.ui.Settings"
+        android:label="@string/action_settings"
+        tools:layout="@layout/settings_fragment" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.mohit.e_commercedemo.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/nav_myOrders"
+        android:name="com.mohit.e_commercedemo.ui.myOrders.myOrders"
+        android:label="@string/menu_myorders"
+        tools:layout="@layout/my_orders_fragment" />
+
+</navigation>
